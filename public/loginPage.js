@@ -19,7 +19,7 @@ userForm.registerFormCallback = (data) => {
     if (response.success) {
       location.reload();
     } else {
-      userForm.setRegisterErrorMessage("Сообщений нет.");
+      userForm.setRegisterErrorMessage("Ошибка");
     }
   });
 };
