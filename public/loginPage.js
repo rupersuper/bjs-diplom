@@ -8,7 +8,7 @@ userForm.loginFormCallback = (data) => {
     if (response.success) {
       location.reload();
     } else {
-      userForm.setLoginErrorMessage("Неверный логин или пароль.");
+      userForm.setLoginErrorMessage(response.error);
     }
   });
 };
@@ -19,7 +19,7 @@ userForm.registerFormCallback = (data) => {
     if (response.success) {
       location.reload();
     } else {
-      userForm.setRegisterErrorMessage("Ошибка");
+      userForm.setRegisterErrorMessage(response.error);
     }
   });
 };
